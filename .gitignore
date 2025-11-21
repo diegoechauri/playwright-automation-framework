@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Playwright & Pytest Artifacts ---
+test-results/
+playwright-report/
+report.html
+assets/
+.pytest_cache/
+__pycache__/
+*.pyc
