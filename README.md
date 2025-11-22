@@ -1,5 +1,7 @@
 # Python Playwright Automation Framework 🎭
 
+[![Playwright Tests 🎭](https://github.com/diegoechauri/playwright-automation-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/diegoechauri/playwright-automation-framework/actions/workflows/playwright.yml)
+
 ## Overview
 This repository contains a scalable test automation framework built with **Python** and **Playwright**.
 It is designed to demonstrate modern QA practices applied to end-to-end testing.
