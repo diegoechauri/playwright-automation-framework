@@ -9,7 +9,7 @@ def page_context():
     """
     with sync_playwright() as p:
         # Lanzamos navegador (headless=False para ver qué pasa mientras desarrollamos)
-        browser = p.chromium.launch(headless=False, slow_mo=500)
+        browser = p.chromium.launch(headless=True)
         
         # Configuramos el contexto (tamaño de pantalla, grabación de video opcional)
         context = browser.new_context(
