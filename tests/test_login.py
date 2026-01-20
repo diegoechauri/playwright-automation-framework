@@ -1,6 +1,7 @@
 import pytest
 from pages.login_page import LoginPage
 from playwright.sync_api import expect
+from config import BASE_URL
 
 # Marcamos este test como "smoke" (crítico)
 @pytest.mark.smoke
@@ -20,7 +21,7 @@ def test_login_exitoso(page_context):
     
     # 3. Validaciones (Assertions)
     # Verificamos que la URL haya cambiado a '/inventory.html'
-    expect(page_context).to_have_url("https://www.saucedemo.com/inventory.html")
+    expect(page_context).to_have_url(f"{BASE_URL}inventory.html")
     
     # Verificamos que el título de la página sea "Swag Labs"
     expect(page_context).to_have_title("Swag Labs")

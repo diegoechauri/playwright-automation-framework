@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+from config import BASE_URL
 
 class LoginPage:
     def __init__(self, page: Page):
@@ -14,7 +15,7 @@ class LoginPage:
     # Métodos que interactúan con la página
     
     def navigate(self):
-        self.page.goto("https://www.saucedemo.com/")
+        self.page.goto(BASE_URL)
 
     def login(self, username, password):
         """Flujo completo de login"""
